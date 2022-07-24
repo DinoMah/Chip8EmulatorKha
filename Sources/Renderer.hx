@@ -37,17 +37,6 @@ class Renderer {
     public function render(graphics: Graphics) {
         clearScreen(graphics);
 
-        /*var pos = 0;
-        for (i in 0..._cols) {
-            for (j in 0..._rows) {
-                if (_display[pos] == 1) {
-                    graphics.color = Color.Cyan;
-                    graphics.fillRect(i, j, _scale, _scale);
-                }
-                pos++;
-            }
-        }*/
-
         for (i in 0..._area) {
             var x = (i % _cols) * _scale;
             var y = Math.floor(i / _cols) * _scale;

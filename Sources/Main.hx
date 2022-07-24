@@ -39,6 +39,7 @@ class Main {
 				_cpu.loadSpritesIntoMemory();
 				trace("Sprites loaded");
 
+				// Put your chip8 rom route here
 				_cpu.loadROM("C:\\Users\\dinoma\\Downloads\\Zero_Demo_[zeroZshadow,_2007].ch8");
 				
 				// Just loading everything is ok for small projects

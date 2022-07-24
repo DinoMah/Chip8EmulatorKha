@@ -67,7 +67,7 @@ class CPU {
         }
     }
 
-    public function loadROM(romPath: String) { // Abrir un archivo desde el disco para poder leerlo
+    public function loadROM(romPath: String) { // Reading a file from disk
         var rom = File.read(romPath);
         rom.bigEndian = true;
         var program = new Array<cpp.UInt8>();
@@ -234,7 +234,7 @@ class CPU {
                         }
                 }
             default:
-                throw new Exception("Codigo desconocido " + opcode);
+                throw new Exception("Uknown code: " + opcode);
         }
     }
 }
